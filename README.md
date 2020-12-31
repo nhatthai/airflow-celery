@@ -10,8 +10,7 @@ Using Celery Executor
 ### Docker Compose
 + Build Docker Image
     ```
-    docker build .
-    docker tag [image_id] [image_name]
+    docker build  --tag=[image_name] .
     docker push [image_name]
     ```
 

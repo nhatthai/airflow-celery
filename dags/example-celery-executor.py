@@ -36,11 +36,11 @@ t1 = BashOperator(
     dag=dag,
 )
 
+
 # run python operator
 def print_context(ds, **kwargs):
-    print(kwargs)
-    print(ds)
     return 'Whatever you return gets printed in the logs'
+
 
 run_this = PythonOperator(
     task_id='print_the_context',
